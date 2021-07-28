@@ -1,4 +1,4 @@
-// This is the solution to: https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+// This is a solution to: https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
 
 import java.util.HashMap;
 
@@ -14,9 +14,9 @@ public class CodilitySolution {
 			}
 		}
 
-		for (int entry : entryToFrequencyMap.keySet()) {
-			if (entryToFrequencyMap.get(entry) % 2 != 0) {
-				return entry;
+		for (int keyEntry : entryToFrequencyMap.keySet()) {
+			if (entryToFrequencyMap.get(keyEntry) % 2 != 0) {
+				return keyEntry;
 			}
 		}
 		return 0;
